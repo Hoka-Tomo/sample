@@ -1,0 +1,60 @@
+/*body全体に適用*/
+body {
+  background-color: #f0f0f0;
+  font-size: 14px;
+  color: #333333;
+  width: 960px;
+  margin: auto;
+}
+/*細かく指定していく！*/
+/*全文章タグをpadding...内側の余白を統一して指定*/
+h1, h2, h3, h4, h5, h6, p {
+  padding: 10px;
+  margin: 0;
+}
+
+/*リスト内容を記述するdd要素のpassingを左から10px開ける*/
+dd {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/*class設定したcontent をまとめて装飾。float: left;は要素を左寄せにする*/
+/*margin-topは範囲の外側の上方からの余白*/
+.content {
+  width: 640px;
+  float: left;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/*class設定したside をまとめて装飾。*/
+.side {
+  width: 280px;
+  float: right;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+
+/*回りこみ防止*/
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*list-style はリストの ● なんかを消せるやつ。*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*ul要素の中のliについて適用。*/
+ul li {
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+}
